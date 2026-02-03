@@ -6,7 +6,7 @@ import { GameState, Position } from './types';
 import { audioService } from './services/audioService';
 import BackgroundHearts from './components/BackgroundHearts';
 
-import valentineImg from '.valentine.jpg';
+import valentineImg from './valentine.jpg';
 // This URL is a high-quality placeholder. 
 const FALLBACK_IMAGE_URL = "https://images.unsplash.com/photo-1516589174184-c68526514283?q=80&w=1000&auto=format&fit=crop";
 
