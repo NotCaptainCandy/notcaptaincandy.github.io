@@ -6,10 +6,9 @@ import { GameState, Position } from './types';
 import { audioService } from './services/audioService';
 import BackgroundHearts from './components/BackgroundHearts';
 
+import valentineImg from '.valentine.jpg';
 // This URL is a high-quality placeholder. 
-// If you name your photo 'valentine.jpg' and put it in the folder, it will try to use that!
 const FALLBACK_IMAGE_URL = "https://images.unsplash.com/photo-1516589174184-c68526514283?q=80&w=1000&auto=format&fit=crop";
-const LOCAL_IMAGE_NAME = "./valentine.jpg";
 
 const App: React.FC = () => {
   const [gameState, setGameState] = useState<GameState>(GameState.ASKING);
@@ -113,8 +112,8 @@ const App: React.FC = () => {
               <div className="relative p-3 bg-white shadow-2xl rounded-2xl border border-stone-100 transform rotate-[-2deg] transition-transform hover:rotate-0 duration-500">
                 <div className="aspect-[3/4] rounded-lg overflow-hidden bg-stone-50">
                   <img
-                    src={LOCAL_IMAGE_NAME}
-                    alt="Our Memory"
+                    src={valentineImg}
+                    alt="Us"
                     className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
                     onError={(e) => {
                       // Fallback if valentine.jpg is not present
